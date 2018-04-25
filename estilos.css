@@ -1,0 +1,85 @@
+:root {
+	--negro: #29272a;
+	--naranja: #f69c21;
+	--naranjaoscuro: #ff6f12;
+	--blanco: #FFF;
+	
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--negro);
+	background-image: url("images/pattern.jpg");
+	font-family: arial, sans-serif;
+	
+}
+
+.cabecera {
+	/* background-color: red; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 16px;
+	margin-bottom: 24px;
+	
+}
+h1 {
+	color: var(--naranja);
+	
+}
+
+.contenedor {
+	background-color: var(--blanco);
+	margin: auto;
+	max-width: 1000px;
+	
+}
+
+.botonera {
+	
+	background-color: var(--naranjaoscuro);
+	height: 57px;
+	padding-left: 15px;
+	padding-bottom: 6px;
+	padding-top: 12px;
+
+	
+}
+
+.botonera-lista {
+	display:flex;
+	justify-content:space-between;
+	list-style: none;
+	
+	
+	
+}
+.botonera-lista li {
+	flex-grow: 1;
+	
+}
+.botonera-lista a {
+	text-decoration: none;
+	font-weight: bold;
+	border-right: 1px solid var(--blanco);
+	color: var(--blanco);
+	display: block;
+text-align: center;	
+padding: 8px 0;
+	
+}
+a.sinborde {
+	border-right: none;
+}
+.botonera-lista a:hover {
+	color: var(--negro);
+}
